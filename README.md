@@ -1,5 +1,6 @@
 # kreslení znaků
-javascript canvas projekt o kresleni patternu
+- https://miftikcz.github.io/kresleniPattern/
+- javascript canvas projekt o kresleni patternu
 
 ### jednoduše random projekt v javascript canvas api
 
