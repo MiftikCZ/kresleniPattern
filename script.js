@@ -39,7 +39,7 @@ function setup() {
 function changedScene() { }
 
 function update(game, delta) {
-    document.getElementById("_mmade_canv").width=window.innerWidth
+    if(!qclicked)  document.getElementById("_mmade_canv").width=window.innerWidth
     deltaAll+=delta
     if(qclicked) setBackground("#080808")
     render(tail, `hsl(${deltaAll*60},37%,48%)`, eclicked, 5,wclicked)
