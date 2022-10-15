@@ -75,7 +75,7 @@ var rect = function (x, y, w, h, color = "#121213", fill = true, radius = 0, str
         ctx.stroke()
     }
 }
-var render = function(body,color="#f44",fill=1,stroke=3) {
+var render = function(body,color="#f44",fill=true,stroke=3,goback=true) {
     ctx.fillStyle = color
     ctx.strokeStyle = color
     ctx.lineWidth = stroke
@@ -88,9 +88,10 @@ var render = function(body,color="#f44",fill=1,stroke=3) {
         try {
             e2=body[i+1]
         } catch (error) {
-            e2=body[0]
+            
         }
-        if(!e2) e2=body[0]
+        if(!e2 && goback) e2=body[0]
+        if(!e2 && !goback) e2=body[i]
         ctx.lineTo(e2[0],e2[1])
     }
     if(fill) {
