@@ -15,7 +15,7 @@ let clicked = false
 
 var createCanvas = function (w,h,style="",add="") {
     document.querySelector("body").innerHTML+=`
-    <canvas width="${w}" height="${h}" id="_mmade_canv"></canvas>
+    <canvas width="${w}" height="${h}" id="_mmade_canv" style="${style}"></canvas>
     ${add}
     `
     _canv=document.getElementById("_mmade_canv")
